@@ -1,0 +1,33 @@
+
+/*-----------------------------------------------
+----------------------Select-----------------------*/
+
+.status {
+  padding: 5px;
+
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+}
+
+.status option[value="new"] {
+  background-color: #87c14f;
+}
+
+.status option[value="processing"] {
+  background-color: #05bad2;
+}
+
+.status option[value="producting"] {
+  background-color: #d41111;
+}
+
+.status option[value="send"] {
+  background-color: #d4a911;
+}
+
+.status option[value="complete"] {
+  background-color: #000000;
+}

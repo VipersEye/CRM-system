@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>login</title>
+    <link rel="stylesheet" href="assets/css/style_sign.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="wrapper">
+      <section class="login">
+        <div class="login__form">
+
+          <form id="formLog" action="functions/sign/sign.php">
+            <div class="login__title">ВХОД</div>
+            <input class="login__input" type="email" name="login" value="" placeholder="ЛОГИН">
+            <input class="login__input" type="password" name="password" value="" placeholder="ПАРОЛЬ">
+            <div class="login__remember">
+              <input id="input__remember" class="input__remember" type="checkbox" name="input__remember" value="">
+              <label for="input__remember">Запомнить пароль</label>
+            </div>
+            <button class="btn btn--sign" type="submit">войти</button>
+            <button class="btn__regform" type="button">Хотите зарегистрироваться?</button>
+          </form>
+        
+          <form class="visually-hidden" id="formReg" action="functions/sign/registration.php">
+            <div class="registration__title">Регистрация</div>
+            <input class="login__input" type="text" name="user_fn" value="" placeholder="Фамилия">
+            <input class="login__input" type="text" name="user_sn" value="" placeholder="Имя">
+            <input class="login__input" type="text" name="user_fd" value="" placeholder="Отчество">
+            <input class="login__input" type="date" name="user_bd" value="" placeholder="Дата рождения">
+            <input class="login__input" type="phone" name="user_phone" value="" placeholder="Телефон">
+            <input class="login__input" type="email" name="user_login" value="" placeholder="email">
+            <input class="login__input" type="password" name="user_password" value="" placeholder="Пароль">
+            <button class="btn btn--registration" type="submit">зарегистрироваться</button>
+            <button class="btn__loginform" type="button">Хотите вернуться?</button>
+          </form>
+
+        </div>
+        
+
+        <div class="login__description">
+          <img class="login__img" src="assets/images/intro/login_img.jpg" alt="">
+          <div class="login__content">
+            <img class="login__icon" src="assets/images/intro/logo.png" alt="">
+            <div class="login__subtitle">crm auto</div>
+            <div class="login__text">Быстро, просто, надежно</div>
+          </div>
+        </div>
+
+      </section>
+    </div>
+
+    <template id="">
+      
+    </template>
+
+    <script src="js/sign.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,12 @@
+.data__content {
+
+    margin-right: 5px;
+    height: 446px;
+  
+    overflow:scroll;
+    overflow-x: hidden;
+  }
+
+.data__diagram {
+    margin-bottom: 60px;
+}

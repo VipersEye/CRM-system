@@ -1,0 +1,369 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #6c7279;
+  background: linear-gradient( 90deg, #53356f 0%, #6f4f9e 100%);
+
+  -webkit-font-smoothing: antialiased;
+
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5,h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+input {
+  margin: 0;
+}
+
+
+
+.wrapper {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  overflow: hidden;
+}
+
+
+/*Login
+=====================================*/
+
+.login {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+
+  /* padding: 69px 0; */
+  padding-left: 220px;
+}
+
+.login__form {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+
+  padding: 80px 76px 0 76px;
+
+  width: 440px;
+  height: 440px;
+
+  background-color: #fff;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.login__title {
+  margin-bottom: 44px;
+
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  color: #401e5a;
+}
+
+/*login__input
+=====================================*/
+
+.login__input {
+  margin-bottom: 33px;
+  padding-bottom: 3px;
+  padding-left: 7px;
+
+  width: 100%;
+
+  font-family: 'Montserrat', sans-serif;
+
+  font-weight: 400;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #d4d3d4;
+  border-radius: 0;
+  outline: none;
+
+  transition: border .3s linear;
+}
+
+.login__input:last-of-type {
+  margin-bottom: 11px;
+}
+
+.login__input::placeholder {
+    color: #65497a;
+    font-family: 'Montserrat', sans-serif;
+    transition: color .3s linear;
+}
+
+.login__input:focus {
+  border-color: #53356f;
+}
+
+.login__input:focus::placeholder {
+  color: #d4d3d4;
+}
+
+/*login__remember
+=====================================*/
+
+.login__remember {
+  margin-bottom: 40px;
+}
+
+.input__remember {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin-right: 10px;
+
+  cursor: pointer;
+}
+
+.input__remember+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.input__remember+label::before {
+  content: '';
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #d4d3d4;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+
+  transition: border .15s linear;
+}
+
+.input__remember:checked+label::before {
+  border-color: #65497a;
+  background-color: #65497a;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+.input__remember:not(:disabled):not(:checked)+label:hover::before {
+  border-color: #65497a;
+}
+
+.input__remember:not(:disabled):not(:checked):hover::before label{
+  color: #65497a;
+}
+
+.input__remember:not(:disabled):active+label::before {
+  background-color: #65497a;
+  border-color: #65497a;
+}
+
+.input__remember:focus:not(:checked)+label::before {
+  border-color: #65497a;
+}
+
+.input__remember:disabled+label::before {
+  background-color: #e9ecef;
+}
+
+.input__remember:hover + label {
+  color: #65497a;
+}
+
+.input__remember:checked + label {
+  color: #65497a;
+}
+
+
+/*btn__sign
+=====================================*/
+
+.btn {
+  display: block;
+
+  margin: 0 auto;
+  padding: 10px 0;
+  height: 40px;
+  
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  background-color: #53356f;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-style: none;
+  outline: none;
+  cursor: pointer;
+
+  transition: background .3s linear;
+}
+
+.btn--sign {
+  margin-bottom: 20px;
+  width: 135px;
+}
+
+.btn:hover {
+  background-color: #6f4f9e;
+}
+
+/* ==========================================
+====================registration================ */
+
+.btn__regform {
+  margin: 0 -6px;
+  width: 220px;
+
+  font-family: 'Montserrat', sans-serif;
+  border: none;
+  background-color: transparent;
+  color: #764b9e;
+  cursor: pointer;
+}
+
+.btn__regform:hover {
+  color: #4e2574;
+}
+
+/* ==========================================
+====================leftside================ */
+
+.login__description {
+  position: relative;
+
+  margin: 15px 0;
+  width: 100%;
+
+  overflow: hidden;
+  background: linear-gradient( to right top, #ae6a98 0%, #8f609f 25%, #7d579d 50%, #7755a0 75%, #7052a0 100%);
+}
+
+.login__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate3d(-50%, -50%, 0);
+
+  opacity: .1;
+}
+
+.login__content {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  color: #fff;
+}
+
+.login__icon {
+  width: 150px;
+  margin-bottom: 30px;
+}
+
+.login__subtitle {
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.login__subtitle::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 160px;
+  margin-bottom: 10px;
+
+  background-color: #fff;
+}
+
+.login__text {
+
+}
+
+/*registration
+=====================================*/
+
+.registration {
+  padding-top: 20px;
+  height: 530px;
+}
+
+.registration__title {
+  margin-bottom: 20px;
+
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  color: #401e5a;
+}
+
+/*btn__registration
+=====================================*/
+
+.btn--registration {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  width: 185px;
+}
+
+
+/*btn__login
+=====================================*/
+
+.btn__loginform {
+  margin: 0 -6px;
+  width: 220px;
+
+  font-family: 'Montserrat', sans-serif;
+  border: none;
+  background-color: transparent;
+  color: #764b9e;
+  cursor: pointer;
+}
+
+.btn__loginform:hover {
+  color: #4e2574;
+}
+
+.visually-hidden {
+  display: none;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
